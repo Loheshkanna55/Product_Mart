@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        Product Mart
+    </header>
+        
+    
+    <button class="start-btn" onclick="start()">
+        <div class="start-div">
+           <span class="start-txt">Start</span>
+           <span><img  class="start-icon" src="Right-Arrow-PNG-Background-Image.png"></span>
+        </div>
+        
+    </button>
+
+    <div class="total">
+        <div class="sec_1" style="display: none;">
+            <div class="info">
+                A website to discover, compare, and shop the best in Tech
+                
+            </div>
+            
+            <div class="para">
+                <p>A Simple Website to Compare the Tech Products of Various Brands, 
+                    Filter them and Purchase Whatever You Want from Flipkart at Best Deals in Just One Click!!!
+                </p>
+            </div>
+        
+            <div class="many-mobiles">
+                <img src="mobiles-Photoroom.png">
+            </div>
+        
+            <img  class="flipkart-icon" src="flipkart.svg">
+        
+            <button class="shop-btn" onclick="brands()">
+                <span class="shop-now">SHOP NOW </span>  <span><img class="shop-icon" src="shop_now.png"></span>
+            </button>
+        </div>
+            
+        <div class="sec-2nd"  style="margin-right: 200px; display: none;">   
+            <div class="show">
+                <div class="mobile-selection">
+                    <h1 class="mobile-head"><span class="select-text">Select The Brand</span></h1>
+                </div>
+                <div class="mobile_brands">
+                    <div class="mobile-brand-sec1" style="margin-right: 00px;">
+                        <button onclick="apple()" value="apple" id="apple_btn">
+                            <img style="height: 50px;" src="apple.svg"> 
+                        </button>
+                        <button id="samsung_btn" onclick="samsung()" value="samsung">
+                            <img src="samsung.svg">
+                        </button>
+                        <button id="vivo_btn" onclick="vivo()" value="vivo">
+                            <img src="vivo.png">
+                        </button>
+                        <button id="oppo_btn" onclick="oppo()" value="oppo">
+                            <img src="oppo.png">
+                        </button>
+                    </div>
+             
+                        
+                    <div class="mobile-brand-sec1">
+                        <button id="mi_btn" onclick="mi()" value="mi">
+                            <img src="xiaomi.svg"
+                            style="height: 70px;"> 
+                        </button>
+                        <button id="oneplus_btn" onclick="oneplus()" value="oneplus">
+                            <img src="oneplus-logo-AD0F8C44DC-seeklogo.com.png"
+                            style="width: 110px;
+                                   height: 50px;">
+                        </button>
+                        <button id="moto_btn" onclick="moto()" value="moto">
+                            <img src="motorola.png">
+                        </button>
+                        <button id="poco_btn" onclick="poco()" value="poco">
+                            <img src="POCO-Emblem.png"
+                            style="height: 60px;">
+                        </button>
+                    </div>
+                        
+                    
+                    <div class="mobile-brand-sec1">
+                        <button id="realme_btn" onclick="realme()" value="realme">
+                            <img src="realme3.png"
+                            style="height: 160px; margin-top: -38px; border-radius: 3px;">
+                        </button>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    
+        
+        <div class="sec_3" style="display: none">
+            <div class="display">
+                <div class="selected-brand">
+                    <div class="brand_img_div">
+                        <img src="apple.svg" class="brand_img">
+                    </div>
+                    <div class="brand_name"><span>Apple iPhone</span></div>
+                    <div id="para">
+                        <p style="margin-bottom: 50px;">
+                            The iPhone, Apple’s flagship smartphone, has been a leader in the industry since its debut in 2007. It combines powerful hardware, a polished operating system (iOS), and a broad ecosystem of software and services, setting high standards for quality, security, and user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="input_div" style="margin-top: 300px;">
+                <h1 class="specific-header">Enter Specifications</h1>
+        
+                <div class="price_input">
+                    <h2>PRICE</h2>
+                    <div class="money_image_div">
+                        <img src="money.png" class="money_img">
+                    </div>
+                    
+                    <div class="price_radio" style="display: block;">
+                        <span id="price_span_1">
+                            <input type="radio" name="price" id="10K-20K" value="10K-20K">10K-20K
+                        </span>
+                        
+                        <span id="price_span_2">
+                            <input type="radio" name="price" id="Above20k" value="Above-20K">Above 20K
+                        </span>
+                        <button onclick="price_btn()" id="price_btn" style="margin-left: 80px;">&#10004;</button>
+                    </div>
+                </div>
+        
+                <div class="ram_input">
+                    <div class="ram-div" style="margin-left: -0px;">
+                        <h2 class="h2">RAM</h2>
+                        <div class="ram_image_div">
+                            <img src="ram55.png" class="ram_img">
+                        </div>
+                        
+                        <div class="ram_radio">
+                            <span id="span-ram-1" class="span-ram-1">
+                                <input type="radio" name="ram" id="6gb" value="6GB">6GB
+                            </span>
+                            
+                            <span id="span-ram-2" class="span-ram-2">
+                                <input type="radio" name="ram" id="8gb" value="8GB">8GB
+                            </span>
+                            <button id="ram_tick_btn" onclick="ram_btn()" style="margin-left: 160px;">&#10004;</button>
+                        </div>
+                    </div>
+                              
+                </div>
+        
+                <div class="storage_input">
+                    <h2 class="storage_header">STORAGE</h2>
+                    <div class="storage_image_div">
+                        <img src="storage1.png" class="storage_img" style="margin-right: 35px;">
+                    </div>
+                    
+                    <div id="storage_radio" style="white-space: nowrap; overflow: hidden; margin-left: px;">
+                        <span class="span_storage_1" id="span_storage_1">
+                            <input type="radio" name="storage" id="128_GB" value="128_GB">128 GB
+                        </span>
+                        <span class="span_storage_2" id="span_storage_2">
+                            <input type="radio" name="storage" id="256_GB" value="256_GB" style="margin-left: 115px;">256 GB
+                        </span>
+                
+                    </div>
+                </div>
+               
+            </div>
+        
+        
+            <div class="apple_div" id="apple_div" style="margin-top: 300px; display: block;">
+               
+                <h1 class="specific-header">Enter Specifications</h1>
+        
+                <div class="price_input">
+                    <h2>PRICE</h2>
+                    <div class="money_image_div">
+                        <img src="money.png" class="money_img">
+                    </div>
+                    
+                    <div class="price_radio" style="display: block;">
+                        <span id="price_span_1">
+                            <input type="radio" name="price" id="50K-1L" value="50K-1L">50K-1L
+                        </span>
+                        
+                        <span id="price_span_2">
+                            <input type="radio" name="price" id="Above_1L" value="Above_1L">Above 1L
+                        </span>
+                        <button onclick="price_btn_apple()" id="price_btn" style="margin-left: 80px;">&#10004;</button>
+                    </div>
+                </div>
+        
+                <div class="storage_input">
+                    <h2 class="storage_header">STORAGE</h2>
+                    <div class="storage_image_div">
+                        <img src="storage1.png" class="storage_img" style="margin-right: 35px;">
+                    </div>
+                    
+                    <div id="apple_storage_radio" style="white-space: nowrap; overflow: hidden; margin-left: px;">
+                        <span class="span_storage_1_iphone" id="span_storage_1">
+                            <input type="radio" name="storage" id="128_GB" value="128_GB">128 GB
+                        </span>
+                        <span class="span_storage_2_iphone" id="span_storage_2">
+                            <input type="radio" name="storage" id="256_GB" value="256_GB" style="margin-left: 115px;">256 GB
+                        </span>
+                        
+                    </div>
+                </div>
+              
+            </div>
+            
+            <div class="search-btn-div">
+                <button class="search-btn"><div>Search</div><img src="search-icon.svg"></button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="scripts.js">
+    </script> 
+</body>
+</html>
